@@ -1,0 +1,437 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+  <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
+  <!-- aos -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <title>Diamond Global</title>
+  <style>
+    .parallax-container{
+      /*background: url(img/background1.png);
+      background-size: cover;
+      background-position: center;*/
+      min-height: 750px;
+    }
+
+    .parallax-container {
+      height: 100vh;
+      width: 100%;
+	}
+	.nav-wrapper {
+	position: absolute;
+	top: 0%;
+	bottom: 100%;
+	z-index: 1;
+	width: 100%;
+	}
+	.nav-wrapper img {
+	  height: 4rem;
+	 /* float: left;*/
+	}
+	.material-icons{
+		color: blue !important;
+	}
+	.caption {
+	  width: 100%;
+	  max-width: 100%;
+	  position: absolute;
+	  top: 20%;
+	  z-index: 1;
+	  text-align: center;
+	  font-size: 2.5rem;
+	}
+	.slider .slides li img {
+	
+	background-size: cover;
+	background-position: bottom !important;
+	}
+
+	#websiteimg {
+		background-position: center !important;
+	}
+
+	.lead {
+	margin-top: 64px;
+	}
+
+	.navlink {
+	color: #0000cd;
+	font-weight: bold;
+	}
+
+	.lights{
+		background-image: url(img/lightoff.jpg);
+		background-size: cover;
+		background-position: center;
+		height: 40rem;
+    }
+
+    .lights:hover{
+	 background-image: url(img/lighton.jpg);
+	  transition-duration: 0.8s;
+	  transition-timing-function: ease-in-out;
+	}
+
+	.heading-underline {
+	  width: 10rem;
+	  height: .2rem;
+	  background-color: #26a69a;;
+	  margin: 0 auto 2rem;
+	}
+
+    @media screen and (max-width: 670px){
+      .parallax-container{
+        min-height: 500px;
+        background-position: center;
+        }
+
+	    .section{
+	      padding-top: 2vw;
+	      padding-bottom: 4vw;
+	    }
+	    .tabs .indicator{
+	      background-color: #1a237e;
+	    }
+	    .tabs .tab a:focus, .tabs .tab a:focus.active{
+	      background: transparent;
+	    }
+	    .caption {
+		  width: 100%;
+		  max-width: 100%;
+		  position: absolute;
+		  top: 10%;
+		  z-index: 1;
+		  text-align: center;
+		  font-size: 2.5rem;
+		}
+	  }
+  </style>
+  </head>
+  <body>
+	   <div class="parallax-container">
+	  	<div class="parallax">
+	  		<img src="img/background1.png" class="imghight">
+	  	</div>
+	   </div>
+
+	   <!-- fixednavbar -->
+	   <header class="navbar-fixed">
+	   	<nav class="nav-wrapper transparent">
+	   		<div class="container">
+	   			<a href="" class="brand-logo"><img src="img/logo.svg"></a>
+	   			<a href="#" class="sidenav-trigger" data-target="mobile-menu"><i class="material-icons">menu</i></a>
+	   			<ul class="right hide-on-med-and-down">
+	   				<li><a href="#" class="navlink">Home</a></li>
+	   				<li><a href="#services" class="navlink">Services</a></li>
+	   				<li><a href="#contact" class="navlink">Contact</a></li>
+	   				<li><a href="#about" class="navlink">About</a></li>
+	   				<li><a href="https://www.instagram.com/diamond_graphicx" target="_blank" class="tooltipped btn-floating btn-small indigo darken-4" data-position="bottom" data-tooltip="Instagram"> 
+		              <i class="fab fa-instagram"></i>
+		              </a></li>
+		              <li><a href="https://www.facebook.com/DiamondGraphics-901647926883824/" target="_blank" class="tooltipped btn-floating btn-small indigo darken-4" data-position="bottom" data-tooltip="Facebook">
+		              <i class="fab fa-facebook"></i>
+		              </a></li>
+		              <li><a href="https://www.twitter.com/tunchiray" target="_blank" class="tooltipped btn-floating btn-small indigo darken-4" data-position="bottom" data-tooltip="Twitter">
+		              <i class="fab fa-twitter"></i>
+		              </a></li>
+	   			</ul>
+	   			<!-- hamburger navbar -->
+	   			<ul class="sidenav grey lighten-2" id="mobile-menu">
+	   				<li><a href="#">Home</a></li>
+	   				<li><a href="#services">Services</a></li>
+	   				<li><a href="#contact">Contact</a></li>
+	   				<li><a href="#about">About</a></li>
+	   			</ul>
+	   			<!-- end hamburger navbar -->
+	   		</div>
+	   	</nav>
+	   </header>
+
+	   <!-- caption for the background -->
+	   <div class="caption text-center">
+      <h1>Welcome To Diamond Global</h1>
+      <h3>Diamond <span class="typing"></span></h3>
+      <a class="btn btn-outline-light btn-md" href="#service">Home</a>
+      <div>
+        <h5><b>Desire | Develop | Deliver</b></h5>
+      </div>
+      </div>
+       <!-- end caption for the background -->
+
+      <!-- services -->
+     <section class="section container" data-aos="fade-left">
+        <div class="scrollspy" id="services">
+         <div class="center">
+            <h1>SERVICES</h1>
+            <P class="">A good impression matters most for businesses to grow above its competitors.We are dedicated and enjoy giving a satisfactory work to our customers. We are a digital marketing agency with specialty in web development (diamond develop), graphics design (diamond graphicx) and video editing (diamond edit). We provide a full suite of professional services tailored to meet your needs.</P>
+            <a href="#about" class="waves-effect waves-light btn-small">Read More</a>
+          </div>
+        </div>
+      </section>
+      <!-- end services -->
+
+      <!-- sliders -->
+        <div class="slider">
+          <ul class="slides">
+            <li>
+              <img src="img/graphics design.png">
+            </li>
+            <li>
+              <img src="img/video edit.jpg">
+            </li>
+            <li>
+              <img src="img/website dev.png" id="websiteimg">
+            </li>
+          </ul>
+       </div>
+       <!-- end sliders -->
+
+        <!-- features -->
+
+       <section class="container section" data-aos="fade-up">
+          <h3 class="center">SECTIONS</h3>
+          <div class="heading-underline"></div>
+         <div class="row center">
+         <div class="col s12 l4" data-aos="fade-left">
+          <div class="feature">
+          <i class="fa fa-code fa-4x" aria-hidden="true" data-fa-transform="shrink-3 up-5"></i>
+          <h3>Diamond Develop</h3>
+          <p>Either an existing website or you want a new website built from scratch, or you want to re-design the look and feel of your weebsite, we give  your website a professional look that distinguish it from your competitor.</p>
+         </div>
+         </div>
+
+        <div class="col s12 l4" data-aos="fade-in">
+        <div class="feature">
+          <i class="fa fa-paint-brush fa-4x" aria-hidden="true" data-fa-transform="shrink-3 up-5"></i>
+          <h3>Diamond Graphicx</h3>
+          <p>We put your concepts and ideas into virtual reality. For professional Logo designs, business cards, flyers, vector design and other marketing designs. We create a unique and outstanding designs for your business.</p>
+        </div>
+      </div>
+
+        <div class="col s12 l4" data-aos="fade-right">
+        <div class="feature">
+          <i class="fa fa-film fa-4x" aria-hidden="true" 
+            data-fa-transform="shrink-3 up-5"></i>
+          <h3 class="edit">Diamond Edit</h3>
+          <p class="lead">Video is one of the most relevant and engaging content foramts today. Whether for short music clips,marketing campaign or a corporate video, We produce a strong visual project for your brand, take your business to the level. </p>
+        </div>
+        </div>
+        </div>
+       </section>
+
+       <!-- end features -->
+
+       <!-- lights effect -->
+       <section class="section">
+        <div class="lights responsive-img">
+           <!-- <img src="img/lighton.jpg" class="responsive-img"> -->
+        </div>
+      </section>
+      <!-- end lights effect -->
+ 
+      
+      <!-- what we offer -->
+      <section class="container section  scrollspy" data-aos="fade-in" id="contact">
+        <div class="row center">
+          <div class="col s12 l6">
+            <h2 class="class"> What We Offer.....</h2>
+            <ul class="tabs">
+              <li class="tab col s4">
+                <a href="#development" class="">Development</a>
+              </li>
+              <li class="tab col s4">
+                <a href="#graphics" class="">Design</a>
+              </li>
+              <li class="tab col s4">
+                <a href="#video" class="">Editing</a>
+              </li>
+            </ul>
+          <div class="col s12" id="development">
+            <p class="flow-text">WEB DEVELOPMENT</p>
+            <p>We are ensured of developing and designing a professional website created and customized according to the client taste.Let us help you build a modern website with a user friendly interface, easy to navigate and fully responsive with the latest web development techniques. our website project are superb and incredibly easy for our clients to maintain over time.</p>
+          </div>
+
+          <div class="col s12" id="graphics">
+            <p class="flow-text">GRAPHICS DESIGN</p>
+            <p>Let us help you with your Photo Editing, Logo Creation, Flyers, Branding, Music Album Cover and other graphics work, with our professional editing tools like Adobe Illustrator, Adobe Photoshop, Adobe InDesign. We design as instructed by our customers. We are guaranteed to deliver a professional work and trust us to do our best to satisfy your demand.</p>
+          </div>
+
+          <div class="col s12" id="video">
+            <p class="flow-text">VIDEO EDITING</p>
+            <p>Businesses want professional-looking videos to increase website traffic or business sales. We create professional short clip for business advert, birthdays, music clips, music lyrics, and other audio visual content. You have important moments on video and need editing services to bring it all together? We are guaranteed to deliver a professional work. </p>
+          </div>
+          </div>
+          <!-- end what we offer -->
+
+          <!-- contact form -->
+           <div class="col s12 l4 offset-l2">
+           <form action="form.php" method="post" name="form" data-email="" target="_blank">
+           <div class="input-field">
+             <i class="material-icons prefix">person</i>
+               <input type="text" id="name" name="name" required="required">
+                 <label for="name"> Your name</label>
+             </div>
+             <div class="input-field">
+             <i class="material-icons prefix">email</i>
+               <input type="email" id="email" name="email" required="required">
+                 <label for="email"> Your Email</label>
+             </div>
+             <div class="input-field">
+             <i class="material-icons prefix">message</i>
+               <textarea id="message" class="materialize-textarea" name="msg" required="required"></textarea>
+               <label for="message"> Your Message</label>
+             </div>
+             <div class="input-field">
+               <i class="material-icons prefix">today</i>
+               <input type="text" id="date" class="datepicker" name="date" required="required">
+                 <label for="date">choose a deliverey date...</label>
+             </div>
+             <div class="input-field">
+             <p>Services Required...</p>
+             <p>
+                <label>
+                 <input type="checkbox" name="websitedesign">
+                 <span>Website Development</span>
+               </label>
+             </p>
+              <p>
+              
+               <label>
+                 <input type="checkbox" name="graphicsdesign">
+                 <span>Graphics Design</span>
+               </label>
+             </p>
+             <p>
+               <label>
+                 <input type="checkbox" name="videoediting">
+                 <span>Video Editing</span>
+               </label>
+             </p>
+             </div>
+             <div class="input-field center">
+             <button class="btn-small" type="submit" name="submit">submit</button>
+             </div>
+         </form>
+          </div>
+
+         </div>
+        </div>
+      </section>
+      <!-- end contact form -->
+
+      <!-- contact us -->
+
+      <!-- footer -->
+       <footer class="page-footer grey darken-3 scrollspy" id="about">
+            <div class="container">
+            <div class="row">
+              <div class="col s12 l6">
+                <h5>About us</h5>
+                <p> Diamond Global is a digital agency that deals with website design/development (diamond develop), graphics design (diamond graphicx) and video editing (diamond edit). Contact us today to learn more about our services.</p>
+                <p>Email us: <a href="mailto:diamondgraphics94@gmail.com" target="_blank">diamondgraphics94@gmail.com</a></p>
+                </div>
+                <div class="col s12 l4 offset-l2">
+                  <h5>Connect</h5>
+                  <ul>
+                    <li><a href="https://www.facebook.com/DiamondGraphics-901647926883824/" class="grey-text text-lighten-3">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/diamond_graphicx" class="grey-text text-lighten-3">Instagram</a></li>
+                    <li><a href="https://www.twitter.com/tunchiray" class="grey-text text-lighten-3">Twitter</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="footer-copyright grey darken-4">
+              <div class="container center-align">&copy;2019 diamondGlobal</div>
+            </div>
+          </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- Optional JavaScript -->
+    <!-- Compiled and minified JavaScript -->
+    <!--- Script typing Files -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 400,
+      duration: 1500
+    });
+  </script>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="typed.min.js"></script>
+  <script type="text/javascript">
+    var typed = new Typed('.typing', {
+      strings: ["Graphicx", "Develop", "Edit"],
+      loop: true,
+      typeSpeed: 40,
+      backSpeed: 40,
+      backDelay: 1000,
+    });
+    
+  </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+
+      $('.sidenav').sidenav();
+      $('.materialboxed').materialbox();
+      $('.parallax').parallax();
+      $('.tabs').tabs();
+      $('.datepicker').datepicker({
+        disableWeekends: true,
+        yearRange: 1
+      });
+      $('.tooltipped').tooltip();
+      $('.scrollspy').scrollSpy();
+      $('.slider').slider({
+        full_width: true,
+        height:400,
+        interval: 4000
+      });
+    });
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
